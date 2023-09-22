@@ -9,7 +9,7 @@ module.exports = {
 
       const userObj = {
         users,
-        userCount: await User.countDocuments(),
+        // userCount: await User.countDocuments(),
       };
 
       res.json(userObj);
@@ -23,7 +23,9 @@ module.exports = {
   async getSingleUser(req, res) {
     try {
       const user = await User.findOne({ _id: req.params.userId })
-        .select('-__v');
+        .select('-__v')
+        .populate('friends')
+        .populate('thoughts')
 
       if (!user) {
         return res.status(404).json({ message: 'No user with that ID' });
@@ -49,7 +51,7 @@ module.exports = {
   // Delete a user
   async deleteUser(req, res) {
     try {
-      const user = await User.findOneAndRemove({ _id: req.params.userId });
+      const user = await User.findOneAndDelete({ _id: req.params.userId });
 
       if (!user) {
         return res.status(404).json({ message: 'No such user exists' });
@@ -80,4 +82,44 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+
+  // Add a friend
+  async addFriend(req, res) {
+    try {
+      const user = await User.findOneAndUpdate(
+        { _id: req.params.userId },
+        { $addToSet: {friends: req.params.friendId }},
+        { new: true });
+        if (!user) {
+          return res.status(404).json({ message: 'No user with this ID'});
+
+        }
+
+        res.json(user);
+    }
+    catch(err) {
+      res.status(500).json(err);
+    }
+  },
+
+  // Remove friend
+  async removeFriend(req, res) {
+    try {
+      const user = await User.findOneAndUpdate(
+        { _id: req.params.userId },
+        { $pull: {friends: req.params.friendId }},
+        { new: true });
+        if (!user) {
+          return res.status(404).json({ message: 'No user with this ID'});
+
+        }
+
+        res.json(user);
+    }
+    catch(err) {
+      res.status(500).json(err);
+    }
+  }
 };
+
+module.exports = userController;
