@@ -30,9 +30,17 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 *add video link*
 
 ## Installation:
+To run this you'll need to download the code from the github repo provided below.
 
-    - npm install 
+    - npm install
+
+
+ Start the server
+
     - npm start
+
+## Tests:
+ Open Insomnia to test API routes
 
 ## License-Details:
 
