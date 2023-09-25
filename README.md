@@ -7,6 +7,7 @@
 [5. Tests](#Tests)  
 [6. License Details](#License-Details)  
 [7. Repository](#Repository) 
+[7. Contributors](#Contributors) 
 
 ## Description: 
 An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
@@ -26,7 +27,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Walkthrough Videos:
 
-*add video link*
+*Insomnia Walkthrough:* https://youtu.be/K5d9RKGhWBc?si=TV5oXlS3nbbzjpGI
 
 ## Installation:
 To run this you'll need to download the code from the github repo provided below.
@@ -47,5 +48,9 @@ This project is under no license.
 
 ## Repository: 
 https://github.com/emelmusica/module-18-social-network-api
+
+## Contributors
+
+Built by Martin Lopez with the help of tutor Samual Cordova, Jim and google. 
 
 ![Alt text](<assets/vs_insomnia_ss.png>)
