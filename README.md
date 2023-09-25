@@ -6,7 +6,7 @@
 [4. Installation](#Installation)  
 [5. Tests](#Tests)  
 [6. License Details](#License-Details)  
-[7. Repository](#Repository) 
+[7. Repository](#Repository)  
 [8. Contributors](#Contributors) 
 
 ## Description: 
