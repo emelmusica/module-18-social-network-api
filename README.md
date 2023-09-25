@@ -6,8 +6,7 @@
 [4. Installation](#Installation)  
 [5. Tests](#Tests)  
 [6. License Details](#License-Details)  
-[7. Submission](#Submission)   
-[8. Questions](#Questions)  
+[7. Contact](#Contact) 
 
 ## Description: 
 An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
