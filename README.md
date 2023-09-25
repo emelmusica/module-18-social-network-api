@@ -6,7 +6,7 @@
 [4. Installation](#Installation)  
 [5. Tests](#Tests)  
 [6. License Details](#License-Details)  
-[7. Contact](#Contact) 
+[7. Repository](#Repository) 
 
 ## Description: 
 An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
@@ -44,3 +44,6 @@ To run this you'll need to download the code from the github repo provided below
 ## License-Details:
 
 This project is under no license.
+
+## Repository: 
+https://github.com/emelmusica/module-18-social-network-api
