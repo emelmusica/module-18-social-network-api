@@ -31,6 +31,9 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Installation:
 
+    - npm install 
+    - npm start
+
 ## License-Details:
 
 This project is under no license.
