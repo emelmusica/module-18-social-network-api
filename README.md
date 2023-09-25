@@ -7,7 +7,7 @@
 [5. Tests](#Tests)  
 [6. License Details](#License-Details)  
 [7. Repository](#Repository) 
-[7. Contributors](#Contributors) 
+[8. Contributors](#Contributors) 
 
 ## Description: 
 An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
@@ -55,4 +55,4 @@ Built by Martin Lopez with the help of tutor Samual Cordova, Jim and google.
 
 ![Alt text](<assets/vs_insomnia_ss.png>)
 
-Thank you
+Thank you!
